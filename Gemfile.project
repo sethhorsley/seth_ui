@@ -1,1 +1,2 @@
 gem "phlex-rails", "~> 2.4"
+gem "tailwind_merge"

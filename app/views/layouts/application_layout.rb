@@ -9,13 +9,14 @@ module Views
         doctype
 
         html do
-          render Shared::Head.new
+          render Components::Shared::Head.new
 
           body do
             script(defer: true, data_domain: "rubyui.com", src: "https://plausible.io/js/script.js")
-            render Shared::Navbar.new
+            render Components::Public::Navbar.new
             main(&block)
-            render Shared::Flashes.new(notice: flash[:notice], alert: flash[:alert])
+            render Components::Shared::Footer.new
+            # render Shared::Flashes.new(notice: flash[:notice], alert: flash[:alert])
           end
         end
       end
