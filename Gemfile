@@ -58,7 +58,8 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "web-console"
+  # https://github.com/rails/web-console/pull/344 - Use github until released
+  gem "web-console", github: "rails/web-console"
 end
 
 group :test do
@@ -66,3 +67,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# project dependencies
+eval_gemfile "Gemfile.project"
