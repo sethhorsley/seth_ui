@@ -6,3 +6,9 @@ import { application } from "./application"
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import SethUiClipboardController from "./seth_ui/clipboard_controller"
+application.register("seth_ui--clipboard", SethUiClipboardController)
+
+import SethUiTabsController from "./seth_ui/tabs_controller"
+application.register("seth_ui--tabs", SethUiTabsController)

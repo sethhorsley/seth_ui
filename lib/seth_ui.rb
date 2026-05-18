@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative "seth_ui/version"
+
 module SethUI
-  VERSION = "0.1.0"
 end

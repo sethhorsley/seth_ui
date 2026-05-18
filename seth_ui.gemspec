@@ -15,4 +15,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency "phlex", ">= 2.0"
   s.add_dependency "tailwind_merge", ">= 0.12"
+  s.add_dependency "rouge"
 end
